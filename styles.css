@@ -1,3 +1,55 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: Josefin Sans, Work Sans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  outline: 1px solid tomato;
+  max-width: 375px;
+  /* padding: 0 20px; */
+  padding: 60px 16px;
+  margin: 0 auto;
+}
+
+.app-about-title {
+  color: #232233;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37.5px; /* 150% */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.app-about-text {
+  color: #6c6c72;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 40px;
+}
+
+.app-about-img-wrap {
+  outline: 1px solid green;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.app-about-img {
+  outline: 1px solid orange;
+  margin: 0 auto;
+}
