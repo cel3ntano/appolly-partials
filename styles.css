@@ -43,14 +43,8 @@
   margin-bottom: 40px;
 }
 
-.app-about-img-wrap {
-  /* position: relative; */
-  outline: 1px solid green;
-}
-
 .app-about-img {
   position: relative;
-  outline: 1px solid orange;
   margin: 0 auto;
   z-index: 1;
 }
@@ -72,9 +66,9 @@
   border-radius: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
-
+/* ============================ MEDIA ===================================== */
 @media screen and (max-width: 320px) {
-  .app-about-elipse {
-    /* left: 30px; */
+  .selector {
+    /* property */
   }
 }
