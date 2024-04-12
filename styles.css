@@ -16,6 +16,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* ============================ MEDIA ===================================== */
+@media screen and (max-width: 320px) {
+  .selector {
+    /* property */
+  }
+}
+
+/* ============================ MEDIA ===================================== */
+
 .container {
   outline: 1px solid tomato;
   max-width: 375px;
@@ -66,9 +75,45 @@
   border-radius: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
-/* ============================ MEDIA ===================================== */
-@media screen and (max-width: 320px) {
-  .selector {
-    /* property */
-  }
+
+.app-about-list {
+}
+
+.app-about-list-item {
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  padding: 18px 16px 10px 19px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.app-about-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.app-about-list-item-icon {
+  fill: #5956e9;
+  margin-right: 18px;
+  /* display: flex; */
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.app-about-list-item-title {
+  color: #232233;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.app-about-list-item-descr {
+  color: #6c6c72;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
