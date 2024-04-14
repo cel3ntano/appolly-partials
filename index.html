@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <h2 class="app-about-title">About our app</h2>
           <p class="app-about-text">
@@ -197,7 +197,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="interface">
         <div class="container">
           <h2 class="app-interface-title">Check out our app interface</h2>
@@ -207,12 +207,28 @@
           </p>
           <div class="app-interface-slider">
             <div class="app-interface-slide">
-              <img
-                src="./images/app-interface/app-interface-slider-main-mob.png"
-                alt="" />
+              <picture class="app-features-list-item-img">
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    ./images/app-interface/app-interface-slider-main-desktop.png    1x,
+                    ./images/app-interface/app-interface-slider-main-desktop@2x.png 2x
+                  " />
+                <source
+                  media="(max-width:1139px)"
+                  srcset="
+                    ./images/app-interface/app-interface-slider-main-mob.png    1x,
+                    ./images/app-interface/app-interface-slider-main-mob@2x.png 2x
+                  " />
+                <img
+                  <img
+                  src="./images/app-interface/app-interface-slider-main-mob.png"
+                  alt=""
+                  width="227" />
+              </picture>
             </div>
             <div class="app-interface-slider-dots">
-              <span class="app-interface-slider-dot-active"></span>
+              <span class="app-interface-slider-dot active"></span>
               <span class="app-interface-slider-dot"></span>
               <span class="app-interface-slider-dot"></span>
               <span class="app-interface-slider-dot"></span>
