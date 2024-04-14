@@ -16,18 +16,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* ============================ Media ===================================== */
-@media screen and (max-width: 320px) {
-  .selector {
-    /* property */
-  }
-}
-
-/* ============================ End Media ===================================== */
-
 .container {
   max-width: 375px;
-  /* padding: 0 20px; */
   padding: 60px 16px;
   margin: 0 auto;
 }
@@ -44,13 +34,26 @@
   margin-bottom: 18px;
 }
 
-.app-about-text {
+.app-about-text.mobile {
+  max-width: 300px;
   color: #6c6c72;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+}
+
+.app-about-text.tablet {
+  display: none;
+}
+
+.app-about-text.desktop {
+  display: none;
+}
+
+.app-about-img-wrap {
+  position: relative;
 }
 
 .app-about-img img {
@@ -63,10 +66,11 @@
   margin: 0 auto;
   width: 212px;
   height: 71px;
-  transform: translateY(-50%);
+  margin-top: -36px;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-50%); */
 }
 
 .app-about-list-item {
@@ -101,11 +105,111 @@
   margin-bottom: 3px;
 }
 
-.app-about-list-item-descr {
+.app-about-list-item-descr.mobile {
   color: #6c6c72;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.app-about-list-item-descr.desktop {
+  display: none;
+}
+
+/* ============================== App About Adaptive ========================= */
+
+@media screen and (max-width: 767px) {
+  .app-about-img-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 120px 40px;
+  }
+  .app-about-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  .app-about-img-wrap {
+    align-self: flex-end;
+  }
+
+  .app-about-list-item {
+    padding: 18px 30px 10px 18px;
+  }
+  .app-about-title {
+    font-size: 31px;
+    font-weight: 700;
+  }
+  .app-about-text.mobile {
+    max-width: 450px;
+    display: none;
+  }
+  .app-about-list-item-descr.desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .app-about-text.tablet {
+    display: block;
+    max-width: 450px;
+    color: #6c6c72;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 120px 135px;
+  }
+  .app-about-ellipse {
+    margin-top: -50px;
+  }
+
+  .app-about-list-item {
+    padding: 30px 20px 21px 18px;
+  }
+
+  .app-about-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .app-about-list-item-title {
+    margin-bottom: 12px;
+  }
+
+  .app-about-text.desktop {
+    display: block;
+    max-width: 600px;
+    color: #6c6c72;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto 60px;
+  }
+
+  .app-about-wrapper {
+    gap: 188px;
+  }
+
+  .app-about-list-item-descr.mobile {
+    display: none;
+  }
+  .app-about-list-item-descr.desktop {
+    display: block;
+    max-width: 490px;
+  }
 }
 
 /* ============================== App Features ========================= */
