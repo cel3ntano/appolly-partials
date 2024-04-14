@@ -118,6 +118,14 @@
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .features .container {
+    background-image: url(/images/app-features/app-features-background-mob@2x.jpg);
+  }
+}
+
 .app-features-title {
   text-align: center;
   color: #fff;
