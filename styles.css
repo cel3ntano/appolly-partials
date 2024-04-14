@@ -59,14 +59,6 @@
 }
 
 .app-about-elipse {
-  width: 100%;
-  margin: 0 auto;
-  /* transform: translateY(-50%); */
-  fill: #fff;
-  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.1));
-}
-
-.ellipse {
   margin: 0 auto;
   width: 212px;
   height: 71px;
@@ -116,4 +108,70 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.features .container {
+  background: #423fd9;
+  background-image: url(/images/app-features/app-features-background-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app-features-title {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.app-features-text {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.app-features-list-item {
+  text-align: center;
+}
+
+.app-features-list-item:not(:last-child):not(:nth-child(3)) {
+  margin-bottom: 40px;
+  /* outline: 1px solid rgb(58, 184, 33); */
+}
+
+.app-features-list-item-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.app-features-list-item-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.app-features-list-item-descr {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.app-features-list-item-img {
+  margin: 60px auto;
+  border-radius: 40px;
+  box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.5);
+}
+
+.app-features-list-item.image {
 }
